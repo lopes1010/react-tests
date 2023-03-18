@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+
+* {
+  margin: 0;
+  padding: 0;
+  --text: white;
+  --primary: black;
+  --border-rad: 9px;
+  font-family: "Walter Turncoat", cursive;
+}
+
+div.page {
+  background-color: var(--primary);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+form {
+  margin: 12vh 0 0 0;
+  color: inherit;
+  height: 30vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--text);
+  border: 1px solid var(--text);
+  width: 9rem;
+  height: calc(10% + 4px);
+  margin: 0 12px;
+  border-radius: var(--border-rad);
+}
+
+form button {
+  cursor: pointer;
+  color: var(--text);
+  border-radius: var(--border-rad);
+  width: 7rem;
+  font-size: larger;
+  height: calc(12% + 1px);
+  background-color: var(--primary);
+  border: 1px solid var(--text);
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+#lines {
+  width: 40vw;
+  margin-top: 7vh;
+}
+
+div#lines ul.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div#lines ul li div {
+  width: 7vh;
+  height: 7vh;
+  text-align: center;
+  line-height: 7vh;
+  border: 1px solid var(--text);
+  border-radius: var(--border-rad);
+  text-decoration: underline;
+}
+
+ul.cartWait {
+  margin-top: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul.cartWait li {
+  margin: 0.25vh 0;
+  padding: 0.2vh 0.3vh;
+  border: 1px solid var(--text);
+  border-radius: var(--border-rad);
+}
+
+ul li {
+  list-style: none;
+}
